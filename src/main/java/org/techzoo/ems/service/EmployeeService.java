@@ -3,14 +3,18 @@ package org.techzoo.ems.service;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.techzoo.ems.dao.EmployeeDao;
 import org.techzoo.ems.dao.InMemoryEmployeeDao;
 import org.techzoo.ems.entity.Employee;
 
-@Service
+@Service("employeeService")
 public class EmployeeService {
 
-	@Autowired private InMemoryEmployeeDao dao;
+	@Autowired 
+	@Qualifier("employeeDao")
+	private EmployeeDao dao;
 	
 	public Collection<Employee> getAllEmployees() {
 		return dao.getAllEmployees();
