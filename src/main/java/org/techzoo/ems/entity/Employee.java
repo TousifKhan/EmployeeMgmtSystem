@@ -1,15 +1,17 @@
 package org.techzoo.ems.entity;
 
+import org.techzoo.ems.util.Department;
+
 public class Employee {
 
 	private String empId;
 	private String name;
-	private String department;
+	private Department department;
 	private double salary;
 	
 	public Employee(){}
 
-	public Employee(String empId, String name, String department, double salary) {
+	public Employee(String empId, String name, Department department, double salary) {
 		super();
 		this.empId = empId;
 		this.name = name;
@@ -33,11 +35,11 @@ public class Employee {
 		this.name = name;
 	}
 
-	public String getDepartment() {
+	public Department getDepartment() {
 		return department;
 	}
 
-	public void setDepartment(String department) {
+	public void setDepartment(Department department) {
 		this.department = department;
 	}
 
