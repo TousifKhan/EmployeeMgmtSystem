@@ -1,0 +1,15 @@
+insert into tbl_employees values(1001, 'Tousif Khan', 'IT', 20000);
+insert into tbl_employees values(1002, 'Asif Khan', 'Management', 30000);
+insert into tbl_employees values(1003, 'Rehan Sk', 'Security', 24000);
+insert into tbl_employees values(1004, 'Rizwan Khan', 'Service', 40000);
+insert into tbl_employees values(1005, 'Rojer Don', 'HR', 23000);
+insert into tbl_employees values(1006, 'Ramiz Khan', 'Management', 30000);
+insert into tbl_employees values(1007, 'Suman Pawar', 'Service', 34000);
+insert into tbl_employees values(1008, 'Zeba Khan', 'HR', 22000);
+insert into tbl_employees values(1009, 'Kafil Ansari', 'Security', 10000);
+insert into tbl_employees values(1010, 'Maryam Mirza', 'IT', 12000);
+insert into tbl_employees values(1011, 'Zahir Khan', 'IT', 15000);
+insert into tbl_employees values(1012, 'Ayesha Khan', 'Security', 18000);
+insert into tbl_employees values(1013, 'Shankar Roy', 'Finance', 80000);
+insert into tbl_employees values(1014, 'Vinod Kumar', 'IT', 70000);
+insert into tbl_employees values(1015, 'Satish Pal', 'Finance', 14000);
