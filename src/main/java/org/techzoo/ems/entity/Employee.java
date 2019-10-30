@@ -4,27 +4,27 @@ import org.techzoo.ems.util.Department;
 
 public class Employee {
 
-	private String empId;
+	private int id;
 	private String name;
 	private Department department;
 	private double salary;
 	
 	public Employee(){}
 
-	public Employee(String empId, String name, Department department, double salary) {
+	public Employee(int id, String name, Department department, double salary) {
 		super();
-		this.empId = empId;
+		this.id = id;
 		this.name = name;
 		this.department = department;
 		this.salary = salary;
 	}
 
-	public String getEmpId() {
-		return empId;
+	public int getId() {
+		return id;
 	}
 
-	public void setEmpId(String empId) {
-		this.empId = empId;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getName() {

@@ -7,6 +7,14 @@ public enum Department {
 	HR,
 	Finance,
 	Management,
-	Security
+	Security;
 	
+	public static Department toEnum(String dept){
+		for(Department d: Department.values()){
+			if(d.toString().equals(dept)) {
+				return d;
+			}
+		}
+		return Department.Management;
+	} 
 }
