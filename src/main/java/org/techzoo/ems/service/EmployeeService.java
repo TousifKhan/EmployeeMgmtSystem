@@ -6,21 +6,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.techzoo.ems.dao.EmployeeDao;
-import org.techzoo.ems.dao.InMemoryEmployeeDao;
 import org.techzoo.ems.entity.Employee;
 
 @Service("employeeService")
 public class EmployeeService {
 
 	@Autowired 
-	@Qualifier("employeeDao")
+	@Qualifier("jdbcDao")
 	private EmployeeDao dao;
 	
 	public Collection<Employee> getAllEmployees() {
 		return dao.getAllEmployees();
 	}
 	
-	public Employee getEmployeeById(String id) {
+	public Employee getEmployeeById(int id) {
 		return dao.getEmployeeById(id);
 	}
 	

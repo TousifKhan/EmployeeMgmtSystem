@@ -6,7 +6,7 @@ import org.techzoo.ems.entity.Employee;
 
 public interface EmployeeDao {
 
-	Employee getEmployeeById(String empId);
+	Employee getEmployeeById(int empId);
 
 	Collection<Employee> getAllEmployees();
 
