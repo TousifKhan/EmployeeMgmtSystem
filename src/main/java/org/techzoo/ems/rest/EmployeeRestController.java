@@ -26,7 +26,7 @@ public class EmployeeRestController {
 	
 	@CrossOrigin
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<Employee> getEmployeeById(@PathVariable("id") String id){
+    public ResponseEntity<Employee> getEmployeeById(@PathVariable("id") int id){
         try
         {
         	Employee tempUser = service.getEmployeeById(id);
